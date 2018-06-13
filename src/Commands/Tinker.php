@@ -10,8 +10,8 @@ use React\EventLoop\Factory;
 use FondBot\Channels\Channel;
 use FondBot\Foundation\Kernel;
 use Illuminate\Console\Command;
-use FondBot\Channels\ChannelManager;
 use FondBot\Chat\Drivers\ConsoleDriver;
+use FondBot\Contracts\Channels\Manager;
 use Illuminate\Contracts\Events\Dispatcher;
 
 class Tinker extends Command
@@ -39,8 +39,8 @@ class Tinker extends Command
         $stdio = resolve(Stdio::class);
         $kernel = resolve(Kernel::class);
 
-        /** @var ChannelManager $channelManager */
-        $channelManager = resolve(ChannelManager::class);
+        /** @var Manager $channelManager */
+        $channelManager = resolve(Manager::class);
         $channelManager->extend('console', function () {
             return new ConsoleDriver;
         });
