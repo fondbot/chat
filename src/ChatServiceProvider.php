@@ -11,7 +11,7 @@ class ChatServiceProvider extends ServiceProvider
     public function register()
     {
         $this->commands([
-            Commands\Tinker::class,
+            Commands\ChatCommand::class,
         ]);
     }
 }

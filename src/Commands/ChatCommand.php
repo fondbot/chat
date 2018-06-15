@@ -14,7 +14,7 @@ use FondBot\Chat\Drivers\ConsoleDriver;
 use FondBot\Contracts\Channels\Manager;
 use Illuminate\Contracts\Events\Dispatcher;
 
-class Tinker extends Command
+class ChatCommand extends Command
 {
     /** {@inheritdoc} */
     protected $signature = 'chat';
