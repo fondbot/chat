@@ -1,14 +1,14 @@
 # FondBot Chat
 
-Gives try your chatbot in your local terminal.
-
-> **Note:** This repository contains the core code of the FondBot framework. If you want to to build chatbot using FondBot framework, visit the main [FondBot repository](https://github.com/fondbot/fondbot).
+Interact with your bot using terminal.
 
 ## Installation
 
-Run `composer require fondbot/chat` to install the composer dependencies.
+You can install the package via composer:
 
-Laravel uses Package Auto-Discovery, so doesn't require you to manually add the ServiceProvider.
+```bash
+composer require fondbot/chat --dev
+```
 
 ## Usage
 
