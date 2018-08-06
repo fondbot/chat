@@ -37,8 +37,8 @@ class ConsoleDriver extends Driver
     /** {@inheritdoc} */
     public function createEvent(Request $request): Event
     {
-        $chat = Chat::create('test', 'Chat Title');
-        $user = User::create('test', 'UserName', 'UserName');
+        $chat = new Chat('test', 'Chat Title');
+        $user = new User('test', 'UserName', 'UserName');
 
         return new MessageReceived($chat, $user, $request->get('message'));
     }

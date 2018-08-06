@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": "^7.1",
-        "fondbot/framework": "^2.0",
+        "fondbot/framework": "^3.0",
         "clue/stdio-react": "^2.0"
     },
     "autoload": {
@@ -21,7 +21,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0-dev"
+            "dev-master": "2.0-dev"
         },
         "laravel": {
             "providers": [

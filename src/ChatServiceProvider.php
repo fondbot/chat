@@ -8,10 +8,12 @@ use Illuminate\Support\ServiceProvider;
 
 class ChatServiceProvider extends ServiceProvider
 {
-    public function register()
+    public function register(): void
     {
-        $this->commands([
-            Commands\ChatCommand::class,
-        ]);
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                Commands\ChatCommand::class,
+            ]);
+        }
     }
 }

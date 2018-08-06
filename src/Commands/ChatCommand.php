@@ -17,13 +17,13 @@ use Illuminate\Contracts\Events\Dispatcher;
 class ChatCommand extends Command
 {
     /** {@inheritdoc} */
-    protected $signature = 'chat';
+    protected $signature = 'fondbot:chat';
 
     /** {@inheritdoc} */
     protected $description = 'Gives try your chatbot in your local terminal.';
 
     /** {@inheritdoc} */
-    public function handle()
+    public function handle(): void
     {
         app()->singleton('loop', function () {
             return Factory::create();
