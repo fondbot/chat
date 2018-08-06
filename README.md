@@ -12,10 +12,8 @@ composer require fondbot/chat --dev
 
 ## Usage
 
-You now have a new toolbelt command that helps you to test and develop your chatbot locally:
-
 ```php
-php toolbelt chat
+php artisan fondbot:chat
 ```
 
 ## Community
