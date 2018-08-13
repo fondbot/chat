@@ -19,4 +19,4 @@ php artisan fondbot:chat
 ## Community
 
 If you have questions or suggestions you are welcome to our Slack channel:
-[https://fondbot.signup.team](https://fondbot.signup.team)
+[https://slack.fondbot.io](https://slack.fondbot.io)
