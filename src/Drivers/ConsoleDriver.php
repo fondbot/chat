@@ -29,7 +29,7 @@ class ConsoleDriver extends Driver
     }
 
     /** {@inheritdoc} */
-    public function getClient()
+    public function createClient()
     {
         return null;
     }
